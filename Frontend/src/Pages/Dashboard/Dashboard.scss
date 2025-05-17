@@ -1,0 +1,42 @@
+.dashboardLayout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; 
+  
+    .sideBarContainer {
+      width: 20%;
+      background-color: #f4f4f4;
+    }
+  
+    .mainContent {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; 
+  
+      .topBarContainer {
+        height: 60px;
+        background-color: #ffffff;
+      }
+  
+      .contentContainer {
+        flex: 1;
+        overflow: hidden; 
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  
+
+  @media screen and (max-width:988px) {
+    .sideBarContainer{
+      display: none;
+    }
+    .mainContent{
+      width: 100% !important;
+    }
+    .topBarContainer{
+        
+    }
+  
+  }
